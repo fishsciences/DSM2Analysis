@@ -1,0 +1,12 @@
+Package: DSM2Analysis
+Type: Package
+Title: Functions for Analyzing DSM2 HYDRO Output
+Version: 0.1.0
+Author: Travis Hinkelman
+Maintainer: Travis Hinkelman <travis.hinkelman@fishsciences.net>
+Encoding: UTF-8
+LazyData: true
+Imports:
+    tidyverse,
+    MESS
+RoxygenNote: 6.1.1
