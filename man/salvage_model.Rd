@@ -4,11 +4,9 @@
 \alias{salvage_model}
 \title{Salvage model}
 \usage{
-salvage_model(run = "Winter", facility = "both")
+salvage_model(facility)
 }
 \arguments{
-\item{run}{Chinook Salmon run: Fall, LateFall, Winter}
-
 \item{facility}{Water export facility: CVP, SWP, both}
 }
 \description{

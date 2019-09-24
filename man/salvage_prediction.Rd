@@ -4,11 +4,9 @@
 \alias{salvage_prediction}
 \title{Salvage prediction}
 \usage{
-salvage_prediction(run, facility, newdata)
+salvage_prediction(facility, newdata)
 }
 \arguments{
-\item{run}{Chinook Salmon run: Fall, LateFall, Winter}
-
 \item{facility}{Water export facility: CVP, SWP, both}
 
 \item{newdata}{Data frame with input data needed for model predictions}

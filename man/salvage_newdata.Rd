@@ -4,11 +4,9 @@
 \alias{salvage_newdata}
 \title{Salvage new data}
 \usage{
-salvage_newdata(run, flow_df, annual_passage = 1e+06)
+salvage_newdata(flow_df, annual_passage)
 }
 \arguments{
-\item{run}{Chinook Salmon run: Fall, LateFall, Winter}
-
 \item{flow_df}{Data frame with modeled flow input}
 
 \item{annual_passage}{Arbitrary annual passage used salvage predictions}
