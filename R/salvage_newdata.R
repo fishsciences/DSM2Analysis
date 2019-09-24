@@ -13,7 +13,8 @@
 #'
 
 salvage_newdata <- function(run, flow_df, annual_passage = 1e6){
-  ss <- sac_salvage[sac_salvage[[run]] == 1,]
+  ss_run <- c("Winter" = "winter", "Fall" = "fall", "LateFall" = "late_fall")
+  ss <- sac_salvage[sac_salvage[[ss_run[[run]]]] == 1,]
   nd <- flow_df %>%
     left_join(winter_run_size) %>%
     mutate(sac_in_z = z_score(Freeport, mean(ss$sac_in, na.rm = TRUE), sd(ss$sac_in, na.rm = TRUE)),
