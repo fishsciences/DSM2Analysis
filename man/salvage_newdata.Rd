@@ -7,7 +7,7 @@
 salvage_newdata(run, flow_df, annual_passage = 1e+06)
 }
 \arguments{
-\item{run}{Chinook Salmon run: Spring, Fall, LateFall, Winter}
+\item{run}{Chinook Salmon run: Fall, LateFall, Winter}
 
 \item{flow_df}{Data frame with modeled flow input}
 

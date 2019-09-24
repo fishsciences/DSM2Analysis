@@ -7,7 +7,7 @@
 salvage_prediction(run, facility, newdata)
 }
 \arguments{
-\item{run}{Chinook Salmon run: Spring, Fall, LateFall, Winter}
+\item{run}{Chinook Salmon run: Fall, LateFall, Winter}
 
 \item{facility}{Water export facility: CVP, SWP, both}
 

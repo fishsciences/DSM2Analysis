@@ -4,10 +4,10 @@
 \alias{salvage_model}
 \title{Salvage model}
 \usage{
-salvage_model(run = "winter", facility = "both")
+salvage_model(run = "Winter", facility = "both")
 }
 \arguments{
-\item{run}{Chinook Salmon run: fall, late_fall, winter}
+\item{run}{Chinook Salmon run: Fall, LateFall, Winter}
 
 \item{facility}{Water export facility: CVP, SWP, both}
 }

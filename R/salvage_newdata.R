@@ -5,7 +5,7 @@
 #' @import dplyr
 #'
 #' @md
-#' @param run              Chinook Salmon run: Spring, Fall, LateFall, Winter
+#' @param run              Chinook Salmon run: Fall, LateFall, Winter
 #' @param flow_df          Data frame with modeled flow input
 #' @param annual_passage   Arbitrary annual passage used salvage predictions
 #'

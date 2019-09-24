@@ -3,7 +3,7 @@
 #' Predicted salvage based on salvage_newdata and salvage_model.
 #'
 #' @md
-#' @param run              Chinook Salmon run: Spring, Fall, LateFall, Winter
+#' @param run              Chinook Salmon run: Fall, LateFall, Winter
 #' @param facility         Water export facility: CVP, SWP, both
 #' @param newdata          Data frame with input data needed for model predictions
 #'
