@@ -5,7 +5,7 @@
 \alias{winter_run_size}
 \title{Winter run size}
 \format{A tibble with 9 rows and 2 columns
-#' \describe{
+  \describe{
   \item{Month}{numeric month}
   \item{Length}{fork length (mm)}
 }}

@@ -2,9 +2,9 @@
 
 library(tidyverse)
 
-sac_sal <- read_csv("data-raw/sac_sal.csv") %>%
+sac_salvage <- read_csv("data-raw/sac_sal.csv") %>%
   mutate(log_released = log(released))
-usethis::use_data(sac_sal, overwrite = TRUE)
+usethis::use_data(sac_salvage, overwrite = TRUE)
 
 # Water year definition is shifted to avoid splitting a cohort across two water year types
 wy_adjusted <- read_csv("data-raw/WaterYearAdjusted.csv") %>%
