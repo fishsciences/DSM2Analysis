@@ -3,7 +3,8 @@
 library(tidyverse)
 
 sac_salvage <- read_csv("data-raw/sac_sal.csv") %>%
-  mutate(log_released = log(released))
+  mutate(log_released = log(released),
+         sal_tot = sal_swp + sal_cvp) # noticed some rows where sal_tot != sal_swp + sal_cvp so recalculating
 usethis::use_data(sac_salvage, overwrite = TRUE)
 
 # Water year definition is shifted to avoid splitting a cohort across two water year types
