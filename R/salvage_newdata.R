@@ -2,6 +2,8 @@
 #'
 #' Prepare flow_df data frame to be used for salvage predictions
 #'
+#' @import dplyr
+#'
 #' @md
 #' @param run              Chinook Salmon run: Spring, Fall, LateFall, Winter
 #' @param flow_df          Data frame with modeled flow input
@@ -20,7 +22,7 @@ salvage_newdata <- function(run, flow_df, annual_passage = 1e6){
            exports_z = z_score(Exports, mean(ss$exports, na.rm = TRUE), sd(ss$exports, na.rm = TRUE)),
            length_z = z_score(Length, mean(ss$length, na.rm = TRUE), sd(ss$length, na.rm = TRUE)))
   nd$released <- nd[[run]] * annual_passage # column with run name is entry timing
-  nd$log_released <- log(released)
+  nd$log_released <- log(nd$released)
   return(nd)
 }
 
