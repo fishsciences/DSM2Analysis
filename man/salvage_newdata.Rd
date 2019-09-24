@@ -4,12 +4,10 @@
 \alias{salvage_newdata}
 \title{Salvage new data}
 \usage{
-salvage_newdata(run, facility, flow_df, annual_passage = 1e+06)
+salvage_newdata(run, flow_df, annual_passage = 1e+06)
 }
 \arguments{
 \item{run}{Chinook Salmon run: Spring, Fall, LateFall, Winter}
-
-\item{facility}{Water export facility: CVP, SWP, both}
 
 \item{flow_df}{Data frame with modeled flow input}
 
